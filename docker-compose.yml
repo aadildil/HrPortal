@@ -18,7 +18,7 @@ services:
       retries: 10
 
   api:
-    image: aaadildil/safeway-vault-api:1.4
+    image: aaadildil/safeway-vault-api:1.5
     container_name: safeway_api
     restart: unless-stopped
     ports:
@@ -41,7 +41,7 @@ services:
         condition: service_healthy
 
   frontend:
-    image: aaadildil/safeway-vault-frontend:1.4
+    image: aaadildil/safeway-vault-frontend:1.5
     container_name: safeway_frontend
     restart: unless-stopped
     ports:
